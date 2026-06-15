@@ -1,0 +1,1 @@
+UPDATE public.products SET videos = (SELECT COALESCE(jsonb_agg(v), '[]'::jsonb) FROM jsonb_array_elements_text(videos) v WHERE v NOT LIKE '%.html');

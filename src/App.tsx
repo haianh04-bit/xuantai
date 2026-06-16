@@ -30,7 +30,7 @@ const App = () => (
         <Routes>
 
           {/* Trang sản phẩm */}
-          <Route path="/btv" element={<Index />} />
+          <Route path="/" element={<Index />} />
 
           {/* Local vẫn vào được admin */}
           {isLocal ? (
@@ -48,7 +48,7 @@ const App = () => (
           {/* Redirect tất cả route khác */}
           <Route
             path="*"
-            element={<Navigate to="/btv" replace />}
+            element={<Navigate to="/" replace />}
           />
 
         </Routes>

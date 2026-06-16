@@ -147,23 +147,21 @@ const ProductInfo = ({
 
         {/* description */}
         <p className="text-lg leading-10 text-foreground mb-6">
-          Bút điện tử với thiết kế như một cây bút
-          thông thường, dễ dàng mang theo bên mình.
-          Sản phẩm phát ra tia điện mạnh hình chữ
-          "X", kích hoạt nhanh chỉ với 1 chạm,
-          giúp bạn đối phó hiệu quả trong các tình
-          huống nguy hiểm.
+          Bàn học thông minh 2 trong 1 là giải pháp hoàn hảo cho không gian học tập của bé.
+          Với thiết kế sáng tạo, sản phẩm kết hợp giữa bàn học và giá đỡ sách, giúp bé duy trì tư thế ngồi đúng cách, bảo vệ cột sống và thị lực.
+          Mặt bàn rộng rãi, có thể điều chỉnh độ nghiêng phù hợp với nhu cầu học tập, trong khi giá đỡ sách giúp giữ sách vở gọn gàng và dễ dàng tiếp cận.
+          Sản phẩm được làm từ chất liệu nhựa ABS an toàn, bền bỉ và dễ dàng vệ sinh, là lựa chọn lý tưởng để tạo nên môi trường học tập thoải mái và hiệu quả cho bé.
         </p>
-
         {/* info list */}
         <div className="space-y-4">
-
           {[
-            "Kích thước: 15,5cm",
-            "Trọng lượng: 55 g",
-            "Dung lượng pin: 3000 mA",
-            "Sạc: chân sạc Type C",
-            "Có khả năng chống rơi, chống gãy, chống va đập, độ bền cao.",
+            "Kích thước mặt bàn: 37 x 47 cm.",
+            "Kích thước giá đỡ sách: 21 x 30,5 cm.",
+            "Màu sắc: xanh dương.",
+            "Chất liệu : Nhựa ABS Nguyên sinh an toàn cho trẻ.",
+            "Giá kẹp sách có thể điểu chỉnh độ nghiêng phù hợp với trẻ.",
+            "Giá đỡ chống gù có thể điều chỉnh chiều cao từ 9.5 - 15cm.",
+            "Sản phẩm Bàn học thông minh 2 trong 1 giúp điều chỉnh tư thế ngồi cho bé, chuẩn Khoa học về khoảng cách ngồi và góc nhìn."
           ].map((item, index) => (
             <div
               key={index}
@@ -195,56 +193,6 @@ const ProductInfo = ({
           ))}
         </div>
       </div>
-      {/* HANDLE SITUATIONS VIDEO */}
-      {product.videos &&
-        product.videos.length > 0 && (
-          <div className="rounded-3xl border border-border bg-card p-6 md:p-8 space-y-8">
-
-            {/* TITLE */}
-            <h2 className="text-2xl md:text-4xl font-extrabold text-red-600 text-center uppercase tracking-wide">
-              Các Tình Huống Xử Lý
-            </h2>
-
-            {/* VIDEO LIST */}
-            <div className="space-y-10">
-
-              {product.videos.map((video, index) => (
-                <div
-                  key={index}
-                  className="space-y-4"
-                >
-                  {/* VIDEO */}
-                  <div className="overflow-hidden rounded-3xl border border-border bg-black shadow-2xl">
-
-                    {video.includes("youtube") ||
-                      video.includes("youtu.be") ? (
-                      <iframe
-                        src={video}
-                        title={`Video ${index + 1}`}
-                        allowFullScreen
-                        className="w-full aspect-video"
-                      />
-                    ) : (
-                      <video
-                        controls
-                        preload="metadata"
-                        className="w-full aspect-video object-cover"
-                      >
-                        <source
-                          src={video}
-                          type="video/mp4"
-                        />
-
-                        Trình duyệt không hỗ trợ video.
-                      </video>
-                    )}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
-      {/* USES */}
       <div className="rounded-3xl border border-border bg-card p-6 md:p-8">
 
         {/* title */}
@@ -257,21 +205,25 @@ const ProductInfo = ({
 
           {[
             {
-              title: "Tự vệ cá nhân:",
-              desc: "Làm cho đối tượng tấn công bất ngờ, sợ hãi và mất kiểm soát tạm thời.",
+              title: "THIẾT KẾ CÔNG THÁI HỌC GIÚP CHỐNG CẬN - CHỐNG GÙ:",
+              desc: "Giá đỡ giúp bé duy trì tư thế ngồi đúng cách, bảo vệ cột sống và thị lực.",
             },
             {
-              title: "Ngụy trang kín đáo:",
-              desc: "Hình dáng như cây bút, không gây chú ý.",
+              title: "DÙNG ĐƯỢC TRONG NHIỀU HOẠT ĐỘNG HỌC TẬP CỦA BÉ:",
+              desc: "Không chỉ dùng để đọc sách, giá đỡ còn hỗ trợ bé khi học vẽ, làm bài tập hoặc xem video học tập, giúp bé dễ dàng tiếp cận tài liệu học tập một cách thuận tiện.",
             },
             {
-              title: "Dễ sử dụng:",
-              desc: "Kích hoạt nhanh chỉ bằng 1 nút bấm.",
+              title: "ĐƯỢC NHIỀU CHUYÊN GIA HÀNG ĐẦU THẾ GIỚI KHUYÊN DÙNG",
+              desc: "Kiểu dáng thiết kế độc quyền từ quá trình nghiên cứu tư thế ngồi của trẻ em, được nhiều chuyên gia hàng đầu thế giới khuyên dùng để bảo vệ sức khỏe cho bé.",
             },
             {
-              title: "Di động:",
-              desc: "Gọn nhẹ, dễ mang trong túi hoặc ví.",
+              title: "DÁNG NGỒI THOẢI MÁI KHÔNG BỊ MỎI HAY KHÓ CHỊU:",
+              desc: "Tỷ lệ vàng 3:7, tay phải chiếm diện tích lớn hơn để tạo sự thoải mái, tự nhiên cho bé khi ngồi học trong thời gian dài mà không bị mỏi hay khó chịu.",
             },
+            {
+              title: "Dùng được cho nhiêu lứa tuổi:",
+              desc: "Giá đỡ có thể điều chỉnh độ nghiêng và chiều cao phù hợp với nhiều lứa tuổi khác nhau, giúp bé sử dụng sản phẩm trong nhiều năm liền.",
+            }
           ].map((item, index) => (
             <div
               key={index}
